@@ -17,12 +17,10 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class BaraekDialogue(player: Player? = null) : DialoguePlugin(player) {
-
     /*
-    Info: Baraek Brigson is a fur trader in the Varrock Square (the center of Varrock).
-    Location in-game: 3217,3435
+        Info: Baraek Brigson is a fur trader in the Varrock Square (the center of Varrock).
+        Location in-game: 3217,3435
      */
-
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         showTopics(
@@ -37,11 +35,9 @@ class BaraekDialogue(player: Player? = null) : DialoguePlugin(player) {
 
     override fun handle(interfaceId: Int, buttonId: Int): Boolean {
         when (stage) {
-
             /*
             "Can you tell me where I can find the Phoenix Gang?"
              */
-
             0 -> npc("Sh sh sh, not so loud! You don't want to get me in", "trouble!").also { stage++ }
             1 -> player("So DO you know where they are?").also { stage++ }
             2 -> npc("I may do.").also { stage++ }
@@ -87,13 +83,11 @@ class BaraekDialogue(player: Player? = null) : DialoguePlugin(player) {
             /*
             "Hello. I am in search of a quest."
              */
-
             16 -> npc("Sorry kiddo, I'm a fur trader not a damsel in distress.").also { stage = END_DIALOGUE }
 
             /*
             "Would you like to buy my fur?"
              */
-
             17 -> npc("Let's have a look at it.").also { stage++ }
             18 -> sendItemDialogue(player, Items.FUR_6814, "You hand Baraeck your fur to look at.").also { stage++ }
             19 -> npc("It's not in the best condition. I guess I could give you", "12 coins for it.").also { stage++ }
@@ -114,7 +108,6 @@ class BaraekDialogue(player: Player? = null) : DialoguePlugin(player) {
             /*
             "Would you like to buy my grey wolf fur?" [Detect: Ring of Charos (A)]
              */
-
             24 -> npc("Let's have a look at it.").also { stage++ }
             25 -> sendItemDialogue(player, Items.GREY_WOLF_FUR_958, "You hand Baraeck your grey wolf fur to look at.").also { stage++ }
             26 -> if (!inEquipment(player, Items.RING_OF_CHAROSA_6465)) {

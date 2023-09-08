@@ -13,6 +13,10 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class DraulLeptocDialogue(player: Player? = null) : DialoguePlugin(player) {
+    /*
+        Info: Walthy nobleman who can be found in his mansion in Varrock. He is Juliet's father.
+        Location: 3159,3433
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         npc(FacialExpression.HALF_GUILTY, "What are you doing in my house..why the", "impertinence...the sheer cheek...how dare you violate my", "personal lodgings....")

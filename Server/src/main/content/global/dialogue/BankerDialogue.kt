@@ -1,5 +1,6 @@
 package content.global.dialogue
 
+import config.NPCs
 import content.global.handlers.npc.BankerNPC
 import core.api.*
 import core.game.dialogue.DialoguePlugin
@@ -18,7 +19,7 @@ import core.tools.START_DIALOGUE
 @Initializable
 class BankerDialogue(player: Player? = null) : DialoguePlugin(player) {
     override fun handle(interfaceId: Int, buttonId: Int): Boolean {
-        val oldModels = intArrayOf(166, 2163, 2164, 5776, 7049, 7050)
+        val oldModels = intArrayOf(NPCs.GNOME_BANKER_166, NPCs.BANKER_2163, NPCs.BANKER_2164, NPCs.BANKER_5776, NPCs.OGRESS_BANKER_7049, NPCs.OGRESS_BANKER_7050)
         val checkFacialExpression = if (npc.id in oldModels) FacialExpression.OLD_NORMAL else FacialExpression.FRIENDLY
         when (stage) {
             START_DIALOGUE -> when {

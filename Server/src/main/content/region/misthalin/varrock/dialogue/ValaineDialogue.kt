@@ -15,6 +15,12 @@ import core.tools.END_DIALOGUE
 @Initializable
 class ValaineDialogue(player: Player? = null) : DialoguePlugin(player) {
 
+    /*
+        Info:
+        Valaine is a merchant found on the 1st floor of the Champions' Guild.
+        She runs Valaine's Shop of Champions, a shop which sells a selection of ranged armour.
+        Location: 3192,3359,1
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         npc(FacialExpression.HALF_GUILTY, "Hello there. Want to have a look at what we're selling", "today?")

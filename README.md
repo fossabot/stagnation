@@ -1,12 +1,86 @@
+### Stagnation
+
 [![AGPL-3.0 License][license-shield]][license-url]
 
-Official repository: [2009scape](https://gitlab.com/2009scape/2009scape).
+This is an unofficial modified version of 2009scape.
 
-I just add content for educational purposes and fun.<br>
-If you want to play and don't know how, follow the instruction below.<br>
-In the wiki tab you will find old changelogs.
+Source: [gitlab.com/2009scape/2009scape/](https://gitlab.com/2009scape/2009scape).
+<details>
+<summary>Authors</summary>
+Aero, Aweinstock, Bushtail, Ceikry, Dginovker, Downthecrop, Dragonkk, Emperor, Pazaz, Skelsoft, SonicForce41, Splinter, Stacx, Torchic, Tyler, Vexia, Woahscam, 404Utopia, Ana-rchy, BadHad, Burnsjordan, Cabbagegod, Coaltong, Coco-bandicoot, DebbySaurus, Doomzday, Gnalvesteffer, Hirohito1, Hubcapp, Ibcrootbeer, Itsmedoggo, Kuanoni, Lethimyr, ManApart, MattG12323, Mihoshika, Natis1, Nickwigton, Ovenbreado, Petnavis, Phunnyguy, PlateGlassArmour, PureTryOut, Qmqz, Roysten, Rsmiley, ScholarNZL, Shhoyle, SteffenCH, Trident101, Unrealhaze, Violet-Vibes, Vkretov, Xmomoz, Yrrah2, Zerkenn, Zsrv, regenleif.
+</details>
 
-<details><summary>Launching the game</summary>
+***
+
+Relative to the original project I removed: 
+- Exp stages
+- Ironman mode
+- Custom shops
+- Custom PVP
+- Custom items
+- Spam messages
+- Custom commands for `regular players`
+
+The full list of changes here you can find the [here](https://github.com/szumaster/2009scape/wiki).
+
+
+<details>
+
+<summary>Setting up the project</summary>
+
+Requirements:
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows)
+- [Java 11](https://adoptium.net/temurin/releases/?version=11).
+
+Before start familiarize yourself with the basic guides:
+- [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- [Pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+
+1. **Install JDK version 11**
+
+- go to the [website](https://adoptium.net/temurin/releases/?version=11), and choose the version that compatible with your system<br>
+  `If you are running a 64bit verison of Windows (standard), select Windows x64`
+- Download and install like any normal application.
+
+2. **Install Intellij IDEA**
+- Visit [official IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) website,
+- scroll down and you will see a download under the "Community Edition".
+- Download and install like any normal application.
+
+3. **Setup the project**
+- Fork this repository.
+- Open IntelliJ
+- Click `File` -> `New` -> Project from `Version Control`
+- Paste the URL of your fork repository in the URL field, click `Done`
+- Wait for the repository to clone.
+- Now Navigate to the `Server` folder inside the file browser from left side, and locate file `pom.xml`
+- Right click this, and click `Add as Maven Project` wait a while for everything to load.
+
+4. **Running the project**
+- if you have gone through all the previous steps, in the intelij on the right side you will find a `maven` tab.
+- Click it, expand the list named `lifecycle`, then Click `compile`, wait until the process is complete.
+- If all the steps have been done correctly, you should receive information that the project has been built correctly.
+
+  ![build_success](https://i.imgur.com/BDhhyOZ.png)
+
+- If so, expand plugins list, then the `exec` list and select from the list `exec`:`java` to start the server.
+
+  ![Running_the_project](https://i.imgur.com/fuDMnXb.png)
+
+5. Running the client. 
+
+- To play you will need a **client**, unfortunately you will not find it here.
+- I can only recommend you to download it from official repository [![download_button](https://i.imgur.com/rJsueNx.png)](https://gitlab.com/2009scape/rt4-client/-/artifacts)
+
+### Aditional information
+
+- https://docs.github.com/en
+
+</details>
+
+<details>
+
+<summary>Launching the game as singleplayer mode) (<b>setting up the project is not required</b>) </summary>
 
 ### Installation process
 
@@ -67,6 +141,8 @@ In the wiki tab you will find old changelogs.
 </details>
 
 ___
+
+Contant: [szumaster0@gmail.com](szumaster0@gmail.com)
 
 ### License
 
