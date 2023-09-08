@@ -1,6 +1,7 @@
 ### Stagnation
 
 [![AGPL-3.0 License][license-shield]][license-url]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fszumaster%2Fstagnation.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fszumaster%2Fstagnation?ref=badge_shield)
 
 This is an unofficial modified version of 2009scape.
 
@@ -150,3 +151,5 @@ Repository is under AGPL 3.0 license, you can read more [here](https://www.gnu.o
 
 [license-shield]: https://img.shields.io/badge/license-AGPL--3.0-informational
 [license-url]: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fszumaster%2Fstagnation.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fszumaster%2Fstagnation?ref=badge_large)
